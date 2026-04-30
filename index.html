@@ -8,47 +8,58 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <body>
 
-<nav class="navbar">
-<h2><i class="fa-solid fa-heart-pulse"></i> NurseH+</h2>
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2><i class="fa-solid fa-heart-pulse"></i> NurseH+</h2>
 
-  <input type="text" placeholder="Search..." class="search">
-</nav>
+  <ul>
+    <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+    <li><i class="fa-solid fa-notes-medical"></i> Conditions</li>
+    <li><i class="fa-solid fa-calculator"></i> Calculators</li>
+  </ul>
+</div>
 
-<section class="hero">
-  <h1>Quick Nursing Reference</h1>
-  <p>Fast. Simple. Practical.</p>
-</section>
+<!-- Main -->
+<div class="main">
 
-<section class="container">
+  <!-- Top Bar -->
+  <div class="topbar">
+    <input type="text" id="search" placeholder="Search condition...">
+  </div>
 
-  <a href="shock.html" class="card link-card">
-    <i class="fa-solid fa-heart-pulse"></i>
-    <h3>Shock</h3>
-    <p>Circulatory failure</p>
-    <span class="btn">View →</span>
-  </a>
+  <!-- Cards -->
+  <div class="cards">
 
-  <a href="dka.html" class="card link-card">
-    <i class="fa-solid fa-syringe"></i>
-    <h3>DKA</h3>
-    <p>Hyperglycemia + Ketones</p>
-    <span class="btn">View →</span>
-  </a>
+    <a href="shock.html" class="card">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <h3>Shock</h3>
+      <p>Circulatory failure</p>
+      <span>View →</span>
+    </a>
 
-  <a href="asthma.html" class="card link-card">
-    <i class="fa-solid fa-lungs"></i>
-    <h3>Asthma</h3>
-    <p>Airway narrowing</p>
-    <span class="btn">View →</span>
-  </a>
+    <a href="dka.html" class="card">
+      <i class="fa-solid fa-syringe"></i>
+      <h3>DKA</h3>
+      <p>Hyperglycemia + Ketones</p>
+      <span>View →</span>
+    </a>
 
-</section>
+    <a href="asthma.html" class="card">
+      <i class="fa-solid fa-lungs"></i>
+      <h3>Asthma</h3>
+      <p>Airway narrowing</p>
+      <span>View →</span>
+    </a>
 
+  </div>
+
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
