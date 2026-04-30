@@ -92,3 +92,40 @@ body {
   transform: translateY(-5px);
   background: #334155;
 }
+/* تحسين الكروت */
+.card {
+  background: linear-gradient(145deg, #1e293b, #0f172a);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  border-radius: 20px;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* تحسين search */
+.topbar input {
+  background: #020617;
+  color: white;
+  border: 1px solid #1e293b;
+  padding-left: 40px;
+}
+
+/* ايقونة search */
+.topbar {
+  position: relative;
+}
+
+.topbar::before {
+  content: "🔍";
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+/* Sidebar active */
+.sidebar li.active {
+  background: #1e293b;
+  box-shadow: 0 0 10px rgba(56,189,248,0.5);
+}
