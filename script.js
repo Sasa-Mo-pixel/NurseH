@@ -1,9 +1,11 @@
-// فتح وقفل الكارد
-function toggleCard(card) {
-  card.classList.toggle("active");
-}
+const search = document.getElementById("search");
 
-// دارك مود
-function toggleMode() {
-  document.body.classList.toggle("light");
-}
+search.addEventListener("keyup", function () {
+  let value = search.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    let text = card.textContent.toLowerCase();
+    card.style.display = text.includes(value) ? "block" : "none";
+  });
+});
